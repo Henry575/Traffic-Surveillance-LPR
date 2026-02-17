@@ -8,12 +8,12 @@ An AI-powered Traffic Surveillance System that detects vehicles using YOLOv8, ex
 
 This project demonstrates a modular Computer Vision pipeline for:
 
-- Vehicle Detection using YOLOv8
-- License Plate Text Extraction using EasyOCR
-- Indian License Plate Format Validation using Regex
-- Document Expiry Verification using a Mock Vehicle Database
+- 🚗 Vehicle Detection using YOLOv8  
+- 🔍 License Plate Text Extraction using EasyOCR  
+- 🧾 Indian License Plate Format Validation using Regex  
+- 📋 Document Expiry Verification using a Mock Vehicle Database  
 
-The system simulates a real-world smart traffic monitoring solution.
+The system simulates a real-world smart traffic monitoring solution used in highways and toll plazas.
 
 ---
 
@@ -31,20 +31,21 @@ The system simulates a real-world smart traffic monitoring solution.
 
 ## 🏗️ Project Architecture
 
-Traffic-Surveillance-LPR
+```
+Traffic-Surveillance-LPR/
 │
-├── assets/ # Input images & demo screenshots
-├── models/ # YOLO model (ignored in Git)
-├── outputs/ # Generated results (ignored in Git)
+├── assets/          # Input images & demo screenshots
+├── models/          # YOLO model (ignored in Git)
+├── outputs/         # Generated results (ignored in Git)
 ├── src/
-│ ├── main.py
-│ ├── plate_detection.py
-│ └── ocr_reader.py
+│   ├── main.py
+│   ├── plate_detection.py
+│   └── ocr_reader.py
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
 
 ---
 
@@ -67,20 +68,37 @@ Traffic-Surveillance-LPR
 ```bash
 git clone https://github.com/YOUR_USERNAME/Traffic-Surveillance-LPR.git
 cd Traffic-Surveillance-LPR
-2️⃣ Install Dependencies
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-3️⃣ Add YOLO Model
+```
+
+### 3️⃣ Add YOLO Model
+
 Download YOLOv8 model from Ultralytics and place it inside:
 
+```
 models/yolov8n.pt
-4️⃣ Run the System
+```
+
+### 4️⃣ Run the System
+
+```bash
 python src/main.py
-📷 Sample Output
-## 📷 Demo
+```
+
+---
+
+## 📷 Demo Output
 
 ![Demo](assets/demo.png)
 
+### Example Console Output
 
+```
 🚗 Detecting license plate...
 Vehicle detected successfully.
 
@@ -91,29 +109,38 @@ Detected Vehicle Number: MH20EE7602
 RC Expiry: ✅ VALID
 Insurance Expiry: ❌ EXPIRED
 PUC Expiry: ❌ EXPIRED
-🎯 Key Features
-Modular and scalable architecture
+```
 
-Real-time vehicle detection logic
+---
 
-Regex-based Indian plate validation
+## 🎯 Key Features
 
-Automated document verification simulation
+- Modular and scalable architecture  
+- Clean separation of detection, OCR, and validation layers  
+- Regex-based Indian plate validation  
+- Automated document verification simulation  
+- Easy to extend for real-time deployment  
 
-Clean separation of detection, OCR, and validation layers
+---
 
-🚀 Future Improvements
-Real-time CCTV video feed integration
+## 🚀 Future Improvements
 
-Database connectivity (MySQL / Firebase)
+- Real-time CCTV video feed integration  
+- Database connectivity (MySQL / Firebase)  
+- Blacklisted vehicle detection  
+- Automatic challan generation  
+- Deployment as a Web Application  
 
-Blacklisted vehicle detection
+---
 
-Automatic challan generation
+## 💼 Resume Highlight
 
-Deployment as Web Application
+Developed a modular AI-based traffic surveillance system using YOLOv8 and OCR to automate vehicle detection and document verification, simulating real-world intelligent traffic monitoring solutions.
 
-👨‍💻 Author
-Vishnu Prasath
-Software Engineering Student
+---
+
+## 👨‍💻 Author
+
+**Vishnu Prasath**  
+Software Engineering Student  
 Interested in AI, ML & Computer Vision
